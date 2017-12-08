@@ -8,6 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap/css/sticky-footer.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/album.css" crossorigin="anonymous">
     
     <link href="dist/jquery.bxslider.css" rel="stylesheet" />
     <link href="css/index.css" rel="stylesheet" />
@@ -17,6 +18,7 @@
     <script src="js/tether.min.js" crossorigin="anonymous"></script>
     <script src="bootstrap/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="dist/jquery.bxslider.min.js"></script> 
+    <script src="js/index.js"></script> 
 
   </head>
   <body>
@@ -49,7 +51,7 @@
 				
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="#" id="dropdown_visa" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">簽證介紹</a>
-					<div class="dropdown-menu" aria-labelledby="dropdown_school">
+					<div class="dropdown-menu" aria-labelledby="dropdown_visa">
 						<a class="dropdown-item" href="#visa_australia">澳洲</a>
 						<a class="dropdown-item" href="#visa_philippines">菲律賓</a>
 					</div>
@@ -77,15 +79,17 @@
 			</ul>
 			</div>
     </nav>
-
-    <section class="jumbotron text-center">
-			<div class="container">
-				<ul class="bxslider">
-					<li><img src="dist/images/pic1.jpg" /></li>
-					<li><img src="dist/images/pic2.jpg" /></li>
-				</ul>
-			</div>
-    <section>
+    
+    <main>
+      <section id="index" class="jumbotron text-center">
+        <div class="container">	
+          <ul class="bxslider">
+            <li><img src="dist/images/pic1.jpg" /></li>
+            <li><img src="dist/images/pic2.jpg" /></li>
+          </ul>
+        </div>
+      <section>
+    </main>
 
     <footer class="footer">
       <div class="container">
