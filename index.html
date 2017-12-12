@@ -81,11 +81,14 @@
     </nav>
     
     <main>
-      <section id="index" class="jumbotron text-center">
-        <div class="container">	
-          
+      <section class="jumbotron text-center">
+        <div id="index" class="container">	
+          <ul class="bxslider">
+            <li><img src="dist/images/pic1.jpg" /></li>
+            <li><img src="dist/images/pic2.jpg" /></li>
+          </ul>
         </div>
-      <section>
+      </section>
     </main>
 
     <footer class="footer">
@@ -97,3 +100,8 @@
   </body>
 </html>
 
+<script> 
+  $(document).ready(function(){
+    $('.bxslider').bxSlider();
+  });
+</script>
