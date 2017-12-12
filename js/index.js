@@ -3,23 +3,20 @@
 
   $(window).on('hashchange',function() {
     var hash = window.location.hash ? window.location.hash.substring(1) : false;
+    var id = $('main section').attr('id');
     
     if(hash && page.indexOf(hash) != -1) {
-      $('#index').hide();
-      $('main').load('template/about_company.html');
+      $('main section div').load('template/about_company.html');
     } else {
-      var id = $('main section').attr('id');
-      $('#'+id).hide();
-      $('#index').show();
-
+      $('main section div').load('template/home_page.html');
     }
 
      
     
     }); 
   $(document).ready(function() {
-      
-  
+    $('main section div').load('template/home_page.html');
+    
   });
 
 
