@@ -4,13 +4,13 @@
   $(window).on('hashchange',function() {
     var hash = window.location.hash ? window.location.hash.substring(1) : false;
     
-    $('section > div:visible').hide();
+    $('section > div:visible').hide('slow');
 
     if(hash && page.indexOf(hash) != -1) {
       // will use has varible
-      $('#'+'about_company').show();
+      $('#'+'about_company').show('slow');
     } else {
-      $('#index').show();
+      $('#index').show('slow');
     }
 
      
